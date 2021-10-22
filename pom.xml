@@ -12,6 +12,7 @@
     <spring-context.version>5.3.9</spring-context.version>
     <spring-beans.version>5.3.9</spring-beans.version>
     <spring-test.version>5.3.9</spring-test.version>
+    <lombok.version>1.18.22</lombok.version>
     <testng.version>7.4.0</testng.version>
     <aws-java-sdk-s3.version>1.12.91</aws-java-sdk-s3.version>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -50,6 +51,12 @@
       <artifactId>spring-test</artifactId>
       <version>${spring-test.version}</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
     </dependency>
 
   </dependencies>
