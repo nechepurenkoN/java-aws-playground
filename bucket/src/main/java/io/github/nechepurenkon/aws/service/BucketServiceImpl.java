@@ -23,7 +23,7 @@ public class BucketServiceImpl implements BucketService {
 
     @Override
     public List<Bucket> getAllBuckets() {
-        return s3client.listBuckets();
+        return dao.getAllBuckets();
     }
 
     @Override
@@ -33,19 +33,9 @@ public class BucketServiceImpl implements BucketService {
     }
 
     @Override
-    public void addFiles(Bucket bucket, List<String> paths) {
-
-    }
-
-    @Override
     public synchronized void deleteBucket(Bucket bucket) {
         s3client.deleteBucket(bucket.getName());
         dao.deleteBucket(bucket.getName());
-    }
-
-    @Override
-    public void clearBucket(Bucket bucket) {
-
     }
 
     @Override

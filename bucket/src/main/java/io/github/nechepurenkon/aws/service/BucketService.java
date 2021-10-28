@@ -10,11 +10,7 @@ public interface BucketService {
 
     void createBucket(String id);
 
-    void addFiles(Bucket bucket, List<String> paths);
-
     void deleteBucket(Bucket bucket);
-
-    void clearBucket(Bucket bucket);
 
     void deleteAllBuckets();
 }
