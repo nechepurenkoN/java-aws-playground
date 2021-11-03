@@ -1,0 +1,7 @@
+Resources:
+  LambdaLocalTest:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: main.lambda_handler
+      Runtime: python3.8
+      CodeUri: src/

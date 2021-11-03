@@ -1,0 +1,39 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "eu-north-1",
+      "eventTime": "2021-11-03T08:49:05.336Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "A2V3RHGEYWJYY6"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "188.242.20.104"
+      },
+      "responseElements": {
+        "x-amz-request-id": "YMFA5JZN0FSBFZ84",
+        "x-amz-id-2": "XZRi3PN4lJ6iNqBLbQ156JZioCZaozDBBLHd9NPnG277lKLoZGNgksfL+QfQHkWmmyhf+SGrVIVmk/FxGC18MOgzGCiHAwuR"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "145a06e8-8c0c-4784-b9ac-93a4610f6e00",
+        "bucket": {
+          "name": "nechn-lambda-bucket",
+          "ownerIdentity": {
+            "principalId": "A2V3RHGEYWJYY6"
+          },
+          "arn": "arn:aws:s3:::nechn-lambda-bucket"
+        },
+        "object": {
+          "key": "Hello.hs",
+          "size": 31,
+          "eTag": "cbb0b2831c2706795a6be830ccec13ec",
+          "versionId": "_hsrCwAVwDx41IeeuWdnQx92HKcPSMAF",
+          "sequencer": "0061824D014F65F017"
+        }
+      }
+    }
+  ]
+}
